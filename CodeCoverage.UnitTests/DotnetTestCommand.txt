@@ -1,0 +1,5 @@
+﻿install coverlet.collector in all projects
+
+dotnet test --collect "XPlat Code Coverage" -r "C:\SourceCode\CodeCoverage\Testresults"
+
+reportgenerator "-reports:C:\SourceCode\CodeCoverage\Testresults\f543edbb-c94e-45be-a943-1fafc10cde38\coverage.cobertura.xml" "-targetDir:C:\SourceCode\CodeCoverage\Testresults"
